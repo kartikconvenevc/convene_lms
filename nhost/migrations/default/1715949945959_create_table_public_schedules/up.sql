@@ -1,0 +1,1 @@
+CREATE TABLE "public"."schedules" ("id" serial NOT NULL, "description" text NOT NULL, "start_time" time NOT NULL, "end_time" time NOT NULL, "event_id" bigint NOT NULL, "owner" uuid NOT NULL, PRIMARY KEY ("id") );

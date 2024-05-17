@@ -1,0 +1,52 @@
+table:
+  name: group_event
+  schema: public
+insert_permissions:
+  - role: staff
+    permission:
+      check: {}
+      columns:
+        - event_id
+        - group_id
+        - id
+    comment: ""
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - event_id
+        - group_id
+        - id
+    comment: ""
+select_permissions:
+  - role: staff
+    permission:
+      columns:
+        - event_id
+        - group_id
+        - id
+      filter: {}
+    comment: ""
+  - role: user
+    permission:
+      columns:
+        - event_id
+        - group_id
+        - id
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: staff
+    permission:
+      columns:
+        - event_id
+        - group_id
+        - id
+      filter: {}
+      check: {}
+    comment: ""
+delete_permissions:
+  - role: staff
+    permission:
+      filter: {}
+    comment: ""

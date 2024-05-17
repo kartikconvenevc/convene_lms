@@ -1,0 +1,1 @@
+CREATE TABLE "public"."group_chat" ("id" bigint NOT NULL, "group_id" bigint NOT NULL, "sender_id" uuid NOT NULL, "timestamp" time NOT NULL DEFAULT now(), "replying_to" bigint, "type" text NOT NULL, "chat_content" text NOT NULL, "name" text, PRIMARY KEY ("id") , UNIQUE ("id"));

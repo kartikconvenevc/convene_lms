@@ -1,0 +1,49 @@
+table:
+  name: inactiveusers
+  schema: public
+insert_permissions:
+  - role: staff
+    permission:
+      check: {}
+      columns:
+        - id
+        - deactivatedby
+        - deactivatedtype
+        - firstname
+        - deactivationdate
+        - userid
+    comment: ""
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - id
+        - deactivatedby
+        - deactivatedtype
+        - firstname
+        - deactivationdate
+        - userid
+    comment: ""
+select_permissions:
+  - role: staff
+    permission:
+      columns:
+        - id
+        - deactivatedby
+        - deactivatedtype
+        - firstname
+        - deactivationdate
+        - userid
+      filter: {}
+    comment: ""
+  - role: user
+    permission:
+      columns:
+        - id
+        - deactivatedby
+        - deactivatedtype
+        - firstname
+        - deactivationdate
+        - userid
+      filter: {}
+    comment: ""

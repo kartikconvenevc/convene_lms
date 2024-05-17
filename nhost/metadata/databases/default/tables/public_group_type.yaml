@@ -1,0 +1,62 @@
+table:
+  name: group_type
+  schema: public
+insert_permissions:
+  - role: staff
+    permission:
+      check: {}
+      columns:
+        - id
+        - created_date
+        - created_by
+        - description
+        - name
+    comment: ""
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - id
+        - created_date
+        - created_by
+        - description
+        - name
+    comment: ""
+select_permissions:
+  - role: staff
+    permission:
+      columns:
+        - id
+        - created_date
+        - created_by
+        - description
+        - name
+      filter: {}
+    comment: ""
+  - role: user
+    permission:
+      columns:
+        - id
+        - created_date
+        - created_by
+        - description
+        - name
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: staff
+    permission:
+      columns:
+        - id
+        - created_date
+        - created_by
+        - description
+        - name
+      filter: {}
+      check: {}
+    comment: ""
+delete_permissions:
+  - role: staff
+    permission:
+      filter: {}
+    comment: ""

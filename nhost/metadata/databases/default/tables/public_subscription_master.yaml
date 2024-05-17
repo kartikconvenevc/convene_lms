@@ -1,0 +1,3 @@
+table:
+  name: subscription_master
+  schema: public

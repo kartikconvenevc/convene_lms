@@ -1,0 +1,40 @@
+table:
+  name: schedules
+  schema: public
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - event_id
+        - id
+        - description
+        - end_time
+        - start_time
+        - owner
+    comment: ""
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - event_id
+        - id
+        - description
+        - end_time
+        - start_time
+        - owner
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - event_id
+        - id
+        - description
+        - end_time
+        - start_time
+        - owner
+      filter: {}
+      check: {}
+    comment: ""

@@ -1,0 +1,41 @@
+table:
+  name: unbookevnt_master
+  schema: public
+insert_permissions:
+  - role: staff
+    permission:
+      check: {}
+      columns:
+        - event_id
+        - id
+        - dereg_date
+        - userid
+    comment: ""
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - event_id
+        - id
+        - dereg_date
+        - userid
+    comment: ""
+select_permissions:
+  - role: staff
+    permission:
+      columns:
+        - event_id
+        - id
+        - dereg_date
+        - userid
+      filter: {}
+    comment: ""
+  - role: user
+    permission:
+      columns:
+        - event_id
+        - id
+        - dereg_date
+        - userid
+      filter: {}
+    comment: ""
