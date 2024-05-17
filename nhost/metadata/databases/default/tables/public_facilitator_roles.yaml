@@ -1,0 +1,52 @@
+table:
+  name: facilitator_roles
+  schema: public
+insert_permissions:
+  - role: staff
+    permission:
+      check: {}
+      columns:
+        - id
+        - created_by
+        - description
+        - name
+        - created_at
+    comment: ""
+select_permissions:
+  - role: staff
+    permission:
+      columns:
+        - id
+        - created_by
+        - description
+        - name
+        - created_at
+      filter: {}
+    comment: ""
+  - role: user
+    permission:
+      columns:
+        - id
+        - created_by
+        - description
+        - name
+        - created_at
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: staff
+    permission:
+      columns:
+        - id
+        - created_by
+        - description
+        - name
+        - created_at
+      filter: {}
+      check: {}
+    comment: ""
+delete_permissions:
+  - role: staff
+    permission:
+      filter: {}
+    comment: ""

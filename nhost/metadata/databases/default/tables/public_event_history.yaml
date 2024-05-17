@@ -1,0 +1,21 @@
+table:
+  name: event_history
+  schema: public
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - event_id
+        - id
+        - created_at
+    comment: ""
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - event_id
+        - id
+        - created_at
+      filter: {}
+    comment: ""

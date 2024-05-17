@@ -1,0 +1,177 @@
+table:
+  name: event_master
+  schema: public
+insert_permissions:
+  - role: staff
+    permission:
+      check: {}
+      columns:
+        - category_id
+        - convene_meeting_id
+        - id
+        - parent_id
+        - type_id
+        - conven_meeting
+        - is_recurring
+        - recording_status
+        - activation_date
+        - clouser_date
+        - deactivation_date
+        - recurrance_end_date
+        - recurrance_start_date
+        - metadata
+        - cover_img_path
+        - description
+        - location
+        - name
+        - publish_status
+        - publish_to
+        - recurrance_frequency
+        - status
+        - created_at
+        - updated_at
+        - end_time
+        - recurrance_end_time
+        - recurrance_start_time
+        - start_time
+    comment: ""
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - category_id
+        - convene_meeting_id
+        - id
+        - parent_id
+        - type_id
+        - conven_meeting
+        - is_recurring
+        - recording_status
+        - activation_date
+        - clouser_date
+        - deactivation_date
+        - recurrance_end_date
+        - recurrance_start_date
+        - metadata
+        - cover_img_path
+        - description
+        - location
+        - name
+        - publish_status
+        - publish_to
+        - recurrance_frequency
+        - status
+        - created_at
+        - updated_at
+        - end_time
+        - recurrance_end_time
+        - recurrance_start_time
+        - start_time
+    comment: ""
+select_permissions:
+  - role: staff
+    permission:
+      columns:
+        - category_id
+        - convene_meeting_id
+        - id
+        - parent_id
+        - type_id
+        - conven_meeting
+        - is_recurring
+        - recording_status
+        - activation_date
+        - clouser_date
+        - deactivation_date
+        - recurrance_end_date
+        - recurrance_start_date
+        - metadata
+        - cover_img_path
+        - description
+        - location
+        - name
+        - publish_status
+        - publish_to
+        - recurrance_frequency
+        - status
+        - created_at
+        - updated_at
+        - end_time
+        - recurrance_end_time
+        - recurrance_start_time
+        - start_time
+      filter: {}
+    comment: ""
+  - role: user
+    permission:
+      columns:
+        - category_id
+        - convene_meeting_id
+        - id
+        - parent_id
+        - type_id
+        - conven_meeting
+        - is_recurring
+        - recording_status
+        - activation_date
+        - clouser_date
+        - deactivation_date
+        - recurrance_end_date
+        - recurrance_start_date
+        - metadata
+        - cover_img_path
+        - description
+        - location
+        - name
+        - publish_status
+        - publish_to
+        - recurrance_frequency
+        - status
+        - created_at
+        - updated_at
+        - end_time
+        - recurrance_end_time
+        - recurrance_start_time
+        - start_time
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: staff
+    permission:
+      columns:
+        - category_id
+        - convene_meeting_id
+        - id
+        - parent_id
+        - type_id
+        - conven_meeting
+        - is_recurring
+        - recording_status
+        - activation_date
+        - clouser_date
+        - deactivation_date
+        - recurrance_end_date
+        - recurrance_start_date
+        - metadata
+        - cover_img_path
+        - description
+        - location
+        - name
+        - publish_status
+        - publish_to
+        - recurrance_frequency
+        - status
+        - created_at
+        - updated_at
+        - end_time
+        - recurrance_end_time
+        - recurrance_start_time
+        - start_time
+      filter: {}
+      check: {}
+    comment: ""
+delete_permissions:
+  - role: staff
+    permission:
+      filter: {}
+    comment: ""

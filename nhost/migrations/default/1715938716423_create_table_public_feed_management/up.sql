@@ -1,0 +1,1 @@
+CREATE TABLE "public"."feed_management" ("id" bigserial NOT NULL, "header_name" text NOT NULL, "description" text, "cover_img_path" text, "start_date" date NOT NULL, "end_date" date, "default_feed" boolean NOT NULL, "created_by" text, "status" boolean NOT NULL DEFAULT true, PRIMARY KEY ("id") );
