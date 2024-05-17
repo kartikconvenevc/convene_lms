@@ -1,0 +1,1 @@
+CREATE TABLE "public"."chat" ("id" bigserial NOT NULL, "replying_to" uuid, "chat_content" text, "type" text, "datetime" time NOT NULL, "receiver_id" uuid NOT NULL, "sender_id" uuid NOT NULL, "contents" text, PRIMARY KEY ("id") );

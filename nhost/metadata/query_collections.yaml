@@ -1,1 +1,48 @@
-[]
+- name: allowed-queries
+  definition:
+    queries:
+      - name: logs_master_by_pk
+        query: |
+          query logs_master_by_pk ($id: bigint!) {
+            logs_master_by_pk(id: $id) {
+              id
+              one
+              test
+            }
+          }
+      - name: logs_master
+        query: |
+          query logs_master {
+            logs_master {
+              id
+              one
+              test
+            }
+          }
+      - name: insert_logs_master_one
+        query: |
+          mutation insert_logs_master_one ($object: logs_master_insert_input!) {
+            insert_logs_master_one(object: $object) {
+              id
+              one
+              test
+            }
+          }
+      - name: update_logs_master_by_pk
+        query: |
+          mutation update_logs_master_by_pk ($id: bigint!, $object: logs_master_set_input!) {
+            update_logs_master_by_pk(pk_columns: {id:$id}, _set: $object) {
+              id
+              one
+              test
+            }
+          }
+      - name: delete_logs_master_by_pk
+        query: |
+          mutation delete_logs_master_by_pk ($id: bigint!) {
+            delete_logs_master_by_pk(id: $id) {
+              id
+              one
+              test
+            }
+          }

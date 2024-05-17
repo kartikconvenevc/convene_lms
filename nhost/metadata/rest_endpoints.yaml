@@ -1,1 +1,45 @@
-[]
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: logs_master
+  methods:
+    - GET
+  name: logs_master
+  url: logs_master
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: insert_logs_master_one
+  methods:
+    - POST
+  name: insert_logs_master_one
+  url: logs_master
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: logs_master_by_pk
+  methods:
+    - GET
+  name: logs_master_by_pk
+  url: logs_master/:id
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: update_logs_master_by_pk
+  methods:
+    - POST
+  name: update_logs_master_by_pk
+  url: logs_master/:id
+- comment: ""
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: delete_logs_master_by_pk
+  methods:
+    - DELETE
+  name: delete_logs_master_by_pk
+  url: logs_master/:id
