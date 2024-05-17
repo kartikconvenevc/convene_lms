@@ -1,0 +1,97 @@
+table:
+  name: content_master
+  schema: public
+insert_permissions:
+  - role: staff
+    permission:
+      check: {}
+      columns:
+        - associated_event_id
+        - associated_group_id
+        - category_id
+        - id
+        - expiry_date
+        - publishing_date
+        - upload_date
+        - file_name
+        - link
+        - published_by
+        - type
+        - uploaded_by
+    comment: ""
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - associated_event_id
+        - associated_group_id
+        - category_id
+        - id
+        - expiry_date
+        - publishing_date
+        - upload_date
+        - file_name
+        - link
+        - published_by
+        - type
+        - uploaded_by
+    comment: ""
+select_permissions:
+  - role: staff
+    permission:
+      columns:
+        - associated_event_id
+        - associated_group_id
+        - category_id
+        - id
+        - expiry_date
+        - publishing_date
+        - upload_date
+        - file_name
+        - link
+        - published_by
+        - type
+        - uploaded_by
+      filter: {}
+    comment: ""
+  - role: user
+    permission:
+      columns:
+        - associated_event_id
+        - associated_group_id
+        - category_id
+        - id
+        - expiry_date
+        - publishing_date
+        - upload_date
+        - file_name
+        - link
+        - published_by
+        - type
+        - uploaded_by
+      filter: {}
+    comment: ""
+update_permissions:
+  - role: staff
+    permission:
+      columns:
+        - associated_event_id
+        - associated_group_id
+        - category_id
+        - id
+        - expiry_date
+        - publishing_date
+        - upload_date
+        - file_name
+        - link
+        - published_by
+        - type
+        - uploaded_by
+      filter: {}
+      check: {}
+    comment: ""
+delete_permissions:
+  - role: staff
+    permission:
+      filter: {}
+    comment: ""

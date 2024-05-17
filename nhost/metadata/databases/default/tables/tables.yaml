@@ -10,6 +10,8 @@
 - "!include public_category_master.yaml"
 - "!include public_chat.yaml"
 - "!include public_chat_block.yaml"
+- "!include public_content_master.yaml"
+- "!include public_event_attendance.yaml"
 - "!include public_logs_master.yaml"
 - "!include storage_buckets.yaml"
 - "!include storage_files.yaml"

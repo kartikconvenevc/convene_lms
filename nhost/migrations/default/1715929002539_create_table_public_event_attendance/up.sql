@@ -1,0 +1,1 @@
+CREATE TABLE "public"."event_attendance" ("id" bigserial NOT NULL, "event_id" bigint NOT NULL, "user_id" uuid NOT NULL, "attendance" boolean, "start_time" timetz NOT NULL, "end_time" timestamptz NOT NULL, "attend_time" timestamp, "meet_url" text, "meet_url_2" text, PRIMARY KEY ("id") );

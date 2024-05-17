@@ -1,0 +1,1 @@
+CREATE TABLE "public"."content_master" ("id" bigserial NOT NULL, "file_name" text NOT NULL, "link" text NOT NULL, "upload_date" date, "uploaded_by" text, "associated_event_id" bigint, "type" text, "published_by" text, "publishing_date" date, "expiry_date" date, "associated_group_id" bigint, "category_id" bigint, PRIMARY KEY ("id") );
