@@ -1,6 +1,70 @@
 table:
   name: event_master
   schema: public
+object_relationships:
+  - name: event_category
+    using:
+      manual_configuration:
+        column_mapping:
+          category_id: id
+        insertion_order: null
+        remote_table:
+          name: event_category
+          schema: public
+  - name: event_faculties
+    using:
+      manual_configuration:
+        column_mapping:
+          id: event_id
+        insertion_order: null
+        remote_table:
+          name: event_faculty
+          schema: public
+  - name: event_histories
+    using:
+      manual_configuration:
+        column_mapping:
+          id: event_id
+        insertion_order: null
+        remote_table:
+          name: event_history
+          schema: public
+  - name: event_type
+    using:
+      manual_configuration:
+        column_mapping:
+          type_id: id
+        insertion_order: null
+        remote_table:
+          name: event_type
+          schema: public
+  - name: group_events
+    using:
+      manual_configuration:
+        column_mapping:
+          id: event_id
+        insertion_order: null
+        remote_table:
+          name: group_event
+          schema: public
+  - name: task_masters
+    using:
+      manual_configuration:
+        column_mapping:
+          id: event_id
+        insertion_order: null
+        remote_table:
+          name: task_master
+          schema: public
+  - name: user_events
+    using:
+      manual_configuration:
+        column_mapping:
+          id: event_id
+        insertion_order: null
+        remote_table:
+          name: user_events
+          schema: public
 insert_permissions:
   - role: staff
     permission:

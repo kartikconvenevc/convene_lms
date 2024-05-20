@@ -1,3 +1,22 @@
 table:
   name: group_chat
   schema: public
+object_relationships:
+  - name: group_master
+    using:
+      manual_configuration:
+        column_mapping:
+          id: id
+        insertion_order: null
+        remote_table:
+          name: group_master
+          schema: public
+  - name: user
+    using:
+      manual_configuration:
+        column_mapping:
+          sender_id: id
+        insertion_order: null
+        remote_table:
+          name: users
+          schema: auth

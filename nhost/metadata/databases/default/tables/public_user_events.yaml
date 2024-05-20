@@ -1,6 +1,25 @@
 table:
   name: user_events
   schema: public
+object_relationships:
+  - name: event_master
+    using:
+      manual_configuration:
+        column_mapping:
+          event_id: id
+        insertion_order: null
+        remote_table:
+          name: event_master
+          schema: public
+  - name: users
+    using:
+      manual_configuration:
+        column_mapping:
+          user_id: id
+        insertion_order: null
+        remote_table:
+          name: users
+          schema: auth
 insert_permissions:
   - role: staff
     permission:

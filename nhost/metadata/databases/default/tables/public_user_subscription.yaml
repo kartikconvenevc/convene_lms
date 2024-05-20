@@ -1,3 +1,13 @@
 table:
   name: user_subscription
   schema: public
+object_relationships:
+  - name: subscription_master
+    using:
+      manual_configuration:
+        column_mapping:
+          subscription_id: id
+        insertion_order: null
+        remote_table:
+          name: subscription_master
+          schema: public

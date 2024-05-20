@@ -1,6 +1,34 @@
 table:
   name: event_faculty
   schema: public
+object_relationships:
+  - name: event_master
+    using:
+      manual_configuration:
+        column_mapping:
+          event_id: id
+        insertion_order: null
+        remote_table:
+          name: event_master
+          schema: public
+  - name: facillitator_role
+    using:
+      manual_configuration:
+        column_mapping:
+          faculty_type_id: id
+        insertion_order: null
+        remote_table:
+          name: facilitator_roles
+          schema: public
+  - name: profile_details
+    using:
+      manual_configuration:
+        column_mapping:
+          user_id: user_id
+        insertion_order: null
+        remote_table:
+          name: profile_details
+          schema: public
 insert_permissions:
   - role: staff
     permission:

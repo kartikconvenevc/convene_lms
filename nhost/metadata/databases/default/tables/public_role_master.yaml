@@ -1,6 +1,16 @@
 table:
   name: role_master
   schema: public
+object_relationships:
+  - name: roleprofile
+    using:
+      manual_configuration:
+        column_mapping:
+          access_name: roles
+        insertion_order: null
+        remote_table:
+          name: profile_details
+          schema: public
 insert_permissions:
   - role: staff
     permission:

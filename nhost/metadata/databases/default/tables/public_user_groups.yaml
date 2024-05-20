@@ -1,6 +1,25 @@
 table:
   name: user_groups
   schema: public
+object_relationships:
+  - name: group_master
+    using:
+      manual_configuration:
+        column_mapping:
+          group_id: id
+        insertion_order: null
+        remote_table:
+          name: group_master
+          schema: public
+  - name: users
+    using:
+      manual_configuration:
+        column_mapping:
+          user_id: id
+        insertion_order: null
+        remote_table:
+          name: users
+          schema: auth
 insert_permissions:
   - role: staff
     permission:

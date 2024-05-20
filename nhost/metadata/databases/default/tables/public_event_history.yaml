@@ -1,6 +1,16 @@
 table:
   name: event_history
   schema: public
+object_relationships:
+  - name: event_master
+    using:
+      manual_configuration:
+        column_mapping:
+          event_id: id
+        insertion_order: null
+        remote_table:
+          name: event_master
+          schema: public
 insert_permissions:
   - role: user
     permission:

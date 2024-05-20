@@ -1,6 +1,61 @@
 table:
   name: group_master
   schema: public
+object_relationships:
+  - name: group_category
+    using:
+      manual_configuration:
+        column_mapping:
+          category_id: id
+        insertion_order: null
+        remote_table:
+          name: group_category
+          schema: public
+  - name: group_chat
+    using:
+      manual_configuration:
+        column_mapping:
+          id: group_id
+        insertion_order: null
+        remote_table:
+          name: user_groups
+          schema: public
+  - name: group_events
+    using:
+      manual_configuration:
+        column_mapping:
+          id: group_id
+        insertion_order: null
+        remote_table:
+          name: group_event
+          schema: public
+  - name: group_type
+    using:
+      manual_configuration:
+        column_mapping:
+          type: id
+        insertion_order: null
+        remote_table:
+          name: group_type
+          schema: public
+  - name: task_masters
+    using:
+      manual_configuration:
+        column_mapping:
+          id: group_id
+        insertion_order: null
+        remote_table:
+          name: task_master
+          schema: public
+  - name: user_groups
+    using:
+      manual_configuration:
+        column_mapping:
+          id: group_id
+        insertion_order: null
+        remote_table:
+          name: user_groups
+          schema: public
 insert_permissions:
   - role: staff
     permission:

@@ -1,6 +1,34 @@
 table:
   name: task_master
   schema: public
+object_relationships:
+  - name: event_master
+    using:
+      manual_configuration:
+        column_mapping:
+          event_id: id
+        insertion_order: null
+        remote_table:
+          name: event_master
+          schema: public
+  - name: group_master
+    using:
+      manual_configuration:
+        column_mapping:
+          group_id: id
+        insertion_order: null
+        remote_table:
+          name: group_master
+          schema: public
+  - name: user
+    using:
+      manual_configuration:
+        column_mapping:
+          staff_id: id
+        insertion_order: null
+        remote_table:
+          name: users
+          schema: auth
 insert_permissions:
   - role: staff
     permission:
