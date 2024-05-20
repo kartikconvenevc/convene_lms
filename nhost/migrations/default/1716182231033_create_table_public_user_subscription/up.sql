@@ -1,0 +1,1 @@
+CREATE TABLE "public"."user_subscription" ("id" bigserial NOT NULL, "user_id" bigint NOT NULL, "subscription_id" bigint NOT NULL, "created_date" date DEFAULT now(), "activation_date" date, "valid_upto_date" date, PRIMARY KEY ("id") );

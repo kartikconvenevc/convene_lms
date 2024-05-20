@@ -1,0 +1,1 @@
+CREATE TABLE "public"."user_events" ("id" bigserial NOT NULL, "user_id" bigint, "event_id" bigint, "userid" uuid, "is_recurring" boolean, "recurrance_start_date" date, "recurrance_end_date" date, "notification" bigint, "status" text, "time_stamp" timestamptz, "dreg_event" bigint, "dreg_date" timestamptz, "booking_status" text, PRIMARY KEY ("id") );

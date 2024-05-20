@@ -1,0 +1,1 @@
+CREATE TABLE "public"."user_groups" ("id" bigserial NOT NULL, "group_id" bigint NOT NULL, "user_id" uuid NOT NULL, "notification" bigint, "status" text, "time_stamp" timestamptz, PRIMARY KEY ("id") );
