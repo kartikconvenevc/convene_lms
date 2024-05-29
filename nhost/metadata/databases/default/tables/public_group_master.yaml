@@ -6,7 +6,7 @@ object_relationships:
     using:
       manual_configuration:
         column_mapping:
-          category_id: id
+          category_id: grpctrid
         insertion_order: null
         remote_table:
           name: group_category
