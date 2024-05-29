@@ -6,6 +6,7 @@ insert_permissions:
     permission:
       check: {}
       columns:
+        - facillatorid
         - id
         - created_by
         - description
@@ -16,32 +17,35 @@ select_permissions:
   - role: staff
     permission:
       columns:
-        - id
+        - created_at
         - created_by
         - description
+        - facillatorid
+        - id
         - name
-        - created_at
       filter: {}
     comment: ""
   - role: user
     permission:
       columns:
-        - id
+        - created_at
         - created_by
         - description
+        - facillatorid
+        - id
         - name
-        - created_at
       filter: {}
     comment: ""
 update_permissions:
   - role: staff
     permission:
       columns:
-        - id
+        - created_at
         - created_by
         - description
+        - facillatorid
+        - id
         - name
-        - created_at
       filter: {}
       check: {}
     comment: ""
